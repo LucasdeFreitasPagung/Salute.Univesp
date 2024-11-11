@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital das Clínicas - Agendamento</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <style>
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #containerAgendamento {
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      #containerAgendamento label,
+      #containerAgendamento select,
+      #containerAgendamento input[type="date"],
+      #containerAgendamento textarea,
+      #containerAgendamento input[type="submit"] {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      #containerAgendamento input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+
+      @media (max-width: 768px) {
+        #containerAgendamento {
+          max-width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div id="logoContainer">
+          <img id="logo" src="./images/logo.png" alt="Logo" />
+        </div>
+        <nav id="navContainer">
+          <a href="./index.html">Inicio<span class="bar"></span></a>
+          <a href="./meu cadastro.html">meu cadastro<span class="bar"></span></a>
+          <a href="./exames.html">Meus exames<span class="bar"></span></a>
+          <a href="./resultados.html">Resultados<span class="bar"></span></a>
+          <a href="./contato.html">Contato<span class="bar"></span></a>
+          <a href="./ajuda.html">Ajuda<span class="bar"></span></a>
+          <p>Bem Vindo, Leonardo</p>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form id="containerAgendamento">
+        <label for="Numero da corrida">Número da corrida:</label>
+        <textarea id="Numero da corrida" name="Numero da corrida" rows="1" cols="50"></textarea>
+
+        <label for="Altura">Altura:</label>
+        <textarea id="Altura" name="Altura" rows="1" cols="50"></textarea>
+
+        <label for="Peso">Peso:</label>
+        <textarea id="Peso" name="Peso" rows="1" cols="50"></textarea>
+
+        <label for="Nome completo">Nome completo:</label>
+        <textarea id="Nome completo" name="Nome completo" rows="1" cols="50"></textarea>
+  
+        <label for="Data de nascimento">Data de nascimento:</label>
+        <textarea id="Data de nascimento" name="Data de nascimento" rows="1" cols="50"></textarea>
+
+        <label for="Algum tipo de doença?">Algum tipo de doença?:</label>
+        <textarea id="Algum tipo de doença?" name="Algum tipo de doença?" rows="1" cols="50"></textarea>
+
+        <label for="Cartão do SUS">Cartão do SUS ou convenio medico:</label>
+        <textarea id="Cartão do SUS" name="Cartão do SUS" rows="1" cols="50"></textarea>
+
+
+
+
+
+
+      </select>
+        <input type="submit" id="btn" value="Cadastrar">
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital das Clínicas - Contato</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <style>
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #containerContato {
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      #containerContato label,
+      #containerContato input[type="text"],
+      #containerContato input[type="email"],
+      #containerContato input[type="tel"],
+      #containerContato textarea,
+      #containerContato input[type="submit"] {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      #containerContato input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+
+      @media (max-width: 768px) {
+        #containerContato {
+          max-width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div id="logoContainer">
+          <img id="logo" src="./images/logo.png" alt="Logo" />
+        </div>
+        <nav id="navContainer">
+          <a href="./index.html">Inicio<span class="bar"></span></a>
+          <a href="./Meu cadastro.html">Agendamento<span class="bar"></span></a>
+          <a href="./exames.html">Meus exames<span class="bar"></span></a>
+          <a href="./resultados.html">Resultados<span class="bar"></span></a>
+          <a href="./contato.html">Contato<span class="bar"></span></a>
+          <a href="./localizacao.html">Como Chegar<span class="bar"></span></a>
+          <p>Bem Vindo, Leonardo</p>
+        </nav>
+      </div>
+    </header>
+    <main id="mainContato">
+      <form id="containerContato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required />
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+        <input type="submit" id="btn" value="Enviar" />
+      </form>
+
+      <div>
+        <p>Whatsapp: 9911304597</p>
+        <p>Telefone: 9911304597</p>
+        <p>Email: contato@hc.com.br</p>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
